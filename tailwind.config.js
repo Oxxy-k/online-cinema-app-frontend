@@ -54,8 +54,8 @@ module.exports = {
             },
             keyframes: {
                 fade: {
-                    from: {opacity: 0},
-                    to: {opacity: 1},
+                    from: { opacity: 0 },
+                    to: { opacity: 1 },
                 },
                 scaleIn: {
                     '0%': {
@@ -83,7 +83,7 @@ module.exports = {
         },
     },
     plugins: [
-        plugin(({addComponents, theme, addUtilities}) => {
+        plugin(({ addComponents, theme, addUtilities }) => {
             addComponents({
                 '.btn-primary': {
                     backgroundColor: primary,
@@ -118,12 +118,12 @@ module.exports = {
                         textShadow: '1px 1px rgba(0, 0, 0, 0.4)'
                     },
 
-                    'outline-border-none': {
+                    '.outline-border-none': {
                         outline: 'none',
                         border: 'none'
                     },
 
-                    'flex-center-between': {
+                    '.flex-center-between': {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'space-between'
