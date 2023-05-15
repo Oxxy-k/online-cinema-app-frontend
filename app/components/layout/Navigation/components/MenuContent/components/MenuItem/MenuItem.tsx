@@ -10,8 +10,6 @@ import styles from './menuItem.module.scss'
 export const MenuItem = ({ icon, title, link }: IMenuItem) => {
 	const { asPath } = useRouter()
 
-	if(asPath === link) console.log(title)
-
 	return (
 		<Link
 			href={link}
