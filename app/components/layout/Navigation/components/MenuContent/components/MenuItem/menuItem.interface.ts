@@ -1,4 +1,4 @@
-import { IconName } from '@/shared/types/icon.types';
+import { IconName } from '@/types/icon.types';
 
 export interface IMenuItem {
     icon: IconName

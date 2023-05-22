@@ -1,6 +1,6 @@
 import { IMenuItem } from '@/components/layout/Navigation/components/MenuContent/components/MenuItem/menuItem.interface'
 
-import { IGenre } from '@/shared/types/movie.types'
+import { IGenre } from '@/types/movie.types'
 
 import { getGenreUrl } from '@/config/navigation.config'
 

@@ -21,12 +21,13 @@
       "@/screens/*": ["SCREENS/*"],
 
       "@/hooks/*": ["HOOKS/*"],
-      "@/shared/*": ["SHARED/*"],
       "@/config/*": ["CONFIG/*"],
       "@/services/*": ["SERVICES/*"],
       "@/utils/*": ["UTILS/*"],
       "@/store/*": ["STORE/*"],
       "@/assets/*": ["ASSETS/*"],
+      "@/types/*": ["TYPES/*"],
+      "@/constants/*": ["CONSTANTS/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

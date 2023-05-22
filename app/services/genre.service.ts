@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios'
 import { api } from 'api/api'
-import { IGenre } from '@/shared/types/movie.types'
+import { IGenre } from '@/types/movie.types'
 
 import { getGenresUrl } from '@/config/api.config'
 
