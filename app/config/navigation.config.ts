@@ -1,7 +1,9 @@
-export const getMovieUrl = (slug: string) => `/movie/${slug}`
-export const getActorUrl = (slug: string) => `/actor/${slug}`
-export const getGenreUrl = (slug: string) => `/genre/${slug}`
+import * as R from '@/constants/routes';
 
-export const getAdminUrl = (url: string) => `/admin/${url}`
+export const getMovieUrl = (slug: string) => `${R.MOVIE_ROUTE}/${slug}`
+export const getActorUrl = (slug: string) => `${R.ACTOR_ROUTE}/${slug}`
+export const getGenreUrl = (slug: string) => `${R.GENRE_ROUTE}/${slug}`
+
+export const getAdminUrl = (url: string) => `${R.ADMIN_ROUTE}/${url}`
 export const getAdminHomeUrl = () => getAdminUrl('').slice(0, -1)
 
