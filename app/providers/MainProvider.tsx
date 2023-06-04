@@ -1,22 +1,30 @@
-import { QueryClient, QueryClientProvider } from 'react-query';
-import { Layout } from '@/components/layout';
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { Provider } from 'react-redux'
 
+import { Layout } from '@/components/layout'
+
+import { store } from '@/store/store'
+
+import { HeadProvider } from './HeadProvider'
+import { ReduxToast } from './ReduxToast'
 
 const queryClient = new QueryClient({
-    defaultOptions: {
-        queries: {
-            refetchOnWindowFocus: false
-        }
-    }
+	defaultOptions: {
+		queries: {
+			refetchOnWindowFocus: false,
+		},
+	},
 })
 
-
 export const MainProvider = ({ children }) => {
-    return (
-        <QueryClientProvider client={queryClient}>
-            <Layout>
-                {children}
-            </Layout>
-        </QueryClientProvider>
-    )
+	return (
+		<HeadProvider>
+			<Provider store={store}>
+				<QueryClientProvider client={queryClient}>
+					<ReduxToast />
+					<Layout>{children}</Layout>
+				</QueryClientProvider>
+			</Provider>
+		</HeadProvider>
+	)
 }

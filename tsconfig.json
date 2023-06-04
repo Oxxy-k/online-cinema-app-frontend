@@ -19,7 +19,8 @@
       "@/components/*": ["COMPONENTS/*"],
       "@/ui/*": ["UI/*"],
       "@/screens/*": ["SCREENS/*"],
-
+      "@/styles/*": ["STYLES/*"],
+      "@/reducer/*": ["REDUCER/*"],
       "@/hooks/*": ["HOOKS/*"],
       "@/config/*": ["CONFIG/*"],
       "@/services/*": ["SERVICES/*"],
