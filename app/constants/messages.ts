@@ -24,3 +24,12 @@ export const REGISTER_BUTTON                 = 'Register'
 
 export const EMAIL                           = 'Email'
 export const PASSWORD                        = 'Password'
+
+export const REGISTRATION                    = 'Registration'
+export const COMMON_SUCCESS                  = 'Completed successfully'
+export const LOGOUT_ERROR_TITLE              = 'Logout'
+export const JWT_EXPIRED_ERROR_MESSAGE       = 'Your authorization is finished, please sign in again'
+
+export const ERROR_REQUEST                   = 'Error request'
+
+export const JWT_EXPIRED_ERROR_RESPONSE_MESSAGE = 'jwt expired';
