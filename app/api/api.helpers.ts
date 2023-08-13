@@ -1,4 +1,6 @@
-export const getContentType = () => ({
+import { RawAxiosRequestHeaders } from 'axios'
+
+export const getContentType = (): RawAxiosRequestHeaders => ({
 	'Content-Type': 'application/json',
 })
 

@@ -34,6 +34,7 @@ export const JWT_EXPIRED_ERROR_MESSAGE       = 'Your authorization is finished, 
 export const ERROR_REQUEST                   = 'Error request'
 
 export const JWT_EXPIRED_ERROR_RESPONSE_MESSAGE = 'jwt expired'
+export const JWT_MUST_BE_PROVIDED_ERROR_RESPONSE_MESSAGE = 'jwt must be provided'
 
 export const MENU_TITLE_GENERAL             = 'General'
 export const MENU_TITLE_HOME                = 'Home'
