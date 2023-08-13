@@ -5,8 +5,8 @@ import { userReducer } from './user/user.slice'
 
 export const store = configureStore({
 	reducer: {
-		toastr: toastrReducer,
 		user: userReducer,
+		toastr: toastrReducer,
 	},
 	devTools: true,
 })

@@ -1,5 +1,5 @@
 .item {
-  @apply animate-fade border-r-4 border-r-transparent transition-colors text-gray-600 flex items-center mt-6;
+  @apply cursor-pointer animate-fade border-r-4 border-r-transparent transition-colors text-gray-600 flex items-center mt-6;
 
   > p {
     @apply ml-3 text-lg hover:text-white;

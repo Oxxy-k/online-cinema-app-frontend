@@ -1,1 +1,1 @@
-export * from './AuthItems'
+export * from './DynamicAuthItems'

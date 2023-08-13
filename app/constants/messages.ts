@@ -19,6 +19,7 @@ export const ERROR_PAGE_500_META             = 'Page not found'
 export const ERROR_PAGE_500_TITLE            = '500 - Something is wrong'
 export const AUTH_PAGE_TITLE                 = 'Auth'
 
+export const LOGOUT_BUTTON                   = 'Logout'
 export const LOGIN_BUTTON                    = 'Login'
 export const REGISTER_BUTTON                 = 'Register'
 
@@ -32,4 +33,10 @@ export const JWT_EXPIRED_ERROR_MESSAGE       = 'Your authorization is finished, 
 
 export const ERROR_REQUEST                   = 'Error request'
 
-export const JWT_EXPIRED_ERROR_RESPONSE_MESSAGE = 'jwt expired';
+export const JWT_EXPIRED_ERROR_RESPONSE_MESSAGE = 'jwt expired'
+
+export const MENU_TITLE_GENERAL             = 'General'
+export const MENU_TITLE_HOME                = 'Home'
+export const MENU_TITLE_DISCOVERY           = 'Discovery'
+export const MENU_TITLE_FRESH_MOVIES        = 'Fresh movies'
+export const MENU_TITLE_TRENDING_NOW        = 'Trending now'

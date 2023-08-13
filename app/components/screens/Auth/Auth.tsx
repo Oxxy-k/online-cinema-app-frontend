@@ -13,6 +13,7 @@ import { Meta } from '@/utils/meta/Meta'
 import styles from './Auth.module.scss'
 import * as M from '@/constants/messages'
 import { IAuthForm } from '@/types/auth.types'
+import { useActions } from '@/hooks/useActions';
 
 export const Auth = () => {
 	useAuthRedirect()
@@ -21,16 +22,14 @@ export const Auth = () => {
 
 	const [formType, setFormType] = useState<'login' | 'registration'>('login')
 
-	const { register, handleSubmit, formState, reset } = useForm<IAuthForm>({
+	const { register: registerInput, handleSubmit, formState, reset } = useForm<IAuthForm>({
 		mode: 'onBlur',
 	})
 
-	const userLogin = (data: IAuthForm) => null
-
-	const userRegister = (data: IAuthForm) => null
+	const { register, login } = useActions()
 
 	const onSubmit: SubmitHandler<IAuthForm> = (data) => {
-		formType === 'login' ? userLogin(data) : userRegister(data)
+		formType === 'login' ? login(data) : register(data)
 		reset()
 	}
 
@@ -43,7 +42,7 @@ export const Auth = () => {
 					<Header className={'mb-6'} title={M.AUTH_PAGE_TITLE} />
 					<AuthForm
 						formState={formState}
-						register={register}
+						register={registerInput}
 						isPasswordRequired
 					/>
 
